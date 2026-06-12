@@ -1,0 +1,150 @@
+.gallery {
+  padding: 100px 32px;
+  background: #0e0b1a;
+  overflow: hidden;
+}
+
+.gallery__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.gallery__header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.gallery__title {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 4vw, 52px);
+  font-weight: 800;
+  color: var(--color-white);
+  margin-bottom: 12px;
+}
+
+.gallery__subtitle {
+  font-size: 16px;
+  color: var(--color-text-muted);
+}
+
+.gallery__showcase {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.gallery__image-frame {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.gallery__main-image {
+  width: 100%;
+  display: block;
+  border-radius: 24px;
+  transition: transform 0.6s ease;
+}
+
+.gallery__image-frame:hover .gallery__main-image {
+  transform: scale(1.02);
+}
+
+.gallery__image-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(14, 11, 26, 0.3) 0%,
+    transparent 30%,
+    transparent 70%,
+    rgba(14, 11, 26, 0.3) 100%
+  );
+  pointer-events: none;
+  border-radius: 24px;
+}
+
+.gallery__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.gallery__tag {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--color-text-muted);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all var(--transition-smooth);
+  cursor: default;
+}
+
+.gallery__tag:hover {
+  background: rgba(124, 92, 191, 0.15);
+  border-color: rgba(124, 92, 191, 0.35);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+/* Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal--delay { transition-delay: 0.15s; }
+.reveal--delay2 { transition-delay: 0.3s; }
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    padding: 70px 20px;
+  }
+}
+
+/*  -----------------  */
+/* ── Swiper carousel ─────────────────────────────────── */
+.gallery-swiper {
+  width: 100%;
+  padding-bottom: 8px; /* breathing room for any shadow */
+}
+
+.gallery__slide-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;   /* consistent card shape */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery__slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery__slide-frame:hover .gallery__slide-image {
+  transform: scale(1.05);
+}
+
+.gallery__image-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.35) 0%,
+    transparent 55%
+  );
+  pointer-events: none;
+}

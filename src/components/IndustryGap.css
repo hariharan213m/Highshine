@@ -1,0 +1,137 @@
+.gap-section {
+  padding: 100px 32px;
+  background: #fafafa;
+}
+
+.gap-section__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.gap-section__eyebrow {
+  display: inline-block;
+  color: #7c5cbf;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.gap-section__title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  color: #1a1430;
+  margin-bottom: 28px;
+  line-height: 1.15;
+}
+
+.gap-section__body {
+  font-size: 16px;
+  color: #4a4a6a;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.gap-section__quote {
+  margin-top: 32px;
+  padding: 20px 24px;
+  background: rgba(124, 92, 191, 0.07);
+  border-left: 3px solid #7c5cbf;
+  border-radius: 0 12px 12px 0;
+}
+
+.gap-section__quote p {
+  font-size: 16px;
+  font-style: italic;
+  color: #3a2a6a;
+  font-weight: 500;
+}
+
+.gap-section__visual {
+  position: relative;
+}
+
+.gap-section__image-wrapper {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(74, 46, 160, 0.2);
+}
+
+.gap-section__image-glow {
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(circle at center, rgba(124, 92, 191, 0.15), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.gap-section__image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.gap-section__image-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.95);
+  color: #1a1430;
+  padding: 10px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  z-index: 2;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.gap-section__image-badge svg {
+  color: #7c5cbf;
+}
+
+/* Reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal--delay {
+  transition-delay: 0.2s;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .gap-section__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .gap-section__visual {
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .gap-section {
+    padding: 70px 20px;
+  }
+}
