@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Navbar.css";
-import logo from "../../public/logo.png";
+import logo from "../assets/logo.png";
 import { HiX } from "react-icons/hi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoChevronDown } from "react-icons/io5";
@@ -167,13 +167,13 @@ const Navbar = () => {
           Contact Us
         </a>
 
-       <button
-  className={`navbar__burger ${menuOpen ? "navbar__burger--open" : ""}`}
-  onClick={() => setMenuOpen(!menuOpen)}
->
-  <RxHamburgerMenu className="icon menu-icon" size={28} />
-  <HiX className="icon close-icon" size={28} />
-</button>
+        <button
+          className={`navbar__burger ${menuOpen ? "navbar__burger--open" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <RxHamburgerMenu className="icon menu-icon" size={28} />
+          <HiX className="icon close-icon" size={28} />
+        </button>
       </div>
     </nav>
   );
