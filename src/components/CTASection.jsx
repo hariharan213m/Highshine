@@ -1,6 +1,17 @@
 import "./CTASection.css";
+import ReactGA from "../utils/analytics.js";
 
 const CTASection = () => {
+  const handleCTA = () => {
+    ReactGA.event({
+      category: "CTA",
+      action: "cta_click",
+      label: "Get Started Button",
+    });
+
+    console.log("CTA Clicked");
+  };
+
   return (
     <section className="cta">
       <div className="cta__container">
@@ -22,7 +33,7 @@ const CTASection = () => {
           </p>
 
           <div className="cta__actions">
-            <button className="cta__btn cta__btn--primary">
+            <button className="cta__btn cta__btn--primary" onClick={handleCTA}>
               <span>Schedule a Free Consultation</span>
               <span className="cta__btn-arrow">→</span>
             </button>
