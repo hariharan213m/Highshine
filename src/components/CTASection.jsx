@@ -6,10 +6,8 @@ const CTASection = () => {
     ReactGA.event({
       category: "CTA",
       action: "cta_click",
-      label: "Get Started Button",
+      label: "Schedule Free Consultation",
     });
-
-    console.log("CTA Clicked");
   };
 
   return (
