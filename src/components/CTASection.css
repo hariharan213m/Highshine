@@ -75,16 +75,12 @@
 
 .cta__btn--primary {
   position: relative;
-
   overflow: hidden;
-
   display: inline-flex;
   align-items: center;
   gap: 10px;
-
   background: #5a3f99;
   color: #fff;
-
   transition:
     transform 0.35s ease,
     box-shadow 0.35s ease;

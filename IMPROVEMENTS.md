@@ -1,9 +1,3 @@
-# UI/UX Improvements — Highshine About Us Page
-
-A comparison of design decisions made between the **old design** (section screenshots) and the **new design** (full-page PDF), with reasoning for each improvement.
-
----
-
 ## 1. CTA Section Redesigned into a Split Layout with Social Proof Stats
 
 **Old design:** The CTA banner was a centered, text-only block on a dark purple background with a single "Schedule a free consultation" button. No supporting context was present — just the headline and button.
@@ -34,23 +28,13 @@ A comparison of design decisions made between the **old design** (section screen
 
 ---
 
-## 4. "Inside the World of Highshine" Gallery Upgraded with Filterable Category Tabs
+## 4. "Inside the World of Highshine" Gallery Enhanced with Swiper Carousel
 
-**Old design:** The photo gallery showed five team photos arranged in a curved fan layout with the headline "Inside the World of Highshine — Our People, Our Story." There were no controls or contextual labels on the images.
+**Old design:** The gallery displayed five team photos in a curved fan layout under the headline "Inside the World of Highshine — Our People, Our Story." While visually unique, some images were partially hidden and difficult to view clearly.
 
-**New design:** The gallery section retains the photo collection but adds five filter tabs beneath: **Team Events**, **Celebrations**, **Work Culture**, **Collaborations**, and **Growth**. The subtitle was also updated to "The Faces, Moments, and Culture Behind Our Growth" to better match the multi-faceted content.
+**New design:** The gallery now uses a responsive Swiper carousel showing three images at a time, allowing every photo to be viewed clearly without overlap. The subtitle was also updated to **The Faces, Moments, and Culture Behind Our Growth.**
 
-**Reasoning:** A static, unlabelled photo gallery is difficult to navigate and feels passive. Adding category filters transforms it into an interactive feature that lets visitors self-select the kind of culture proof most relevant to them — whether a client assessing team cohesion or a candidate evaluating work environment. Filter tabs also set the expectation of more content, encouraging deeper engagement and dwell time on the page.
-
----
-
-## 5. "Our Values" Section Subtitle Corrected for Relevance
-
-**Old design (and present in new design):** The subtitle under "Our Values" reads: *"Purpose-built modules that address every dimension of A&D operations — from a single, integrated platform."* This copy appears to have been copied from a product/solutions section and does not describe company values.
-
-**Recommended improvement:** The subtitle should be updated to something contextually accurate, such as: *"The principles that guide every client engagement, every team decision, and every line of code we deliver."*
-
-**Reasoning:** Mismatched copy undermines credibility — particularly on an "About Us" page where authenticity is paramount. A visitor reading about company values who encounters product marketing language will disengage or distrust the page. Aligning the subtitle with the section's actual purpose reinforces consistency and professionalism.
+**Reasoning:** The Swiper-based layout improves image visibility, responsiveness, and navigation compared to the previous fan-style arrangement. By presenting photos in a clean, structured carousel, visitors can browse team moments more comfortably while enjoying a smoother experience across desktop and mobile devices.
 
 ---
 
@@ -62,9 +46,6 @@ A comparison of design decisions made between the **old design** (section screen
 | 2 | Founder profile cards with photos and titles | Content + Trust | Credibility |
 | 3 | Culture section with metrics, tags, and dual CTAs | Content + Scannability | Engagement |
 | 4 | Gallery with filterable category tabs | Interactivity + UX | Dwell time |
-| 5 | Values section subtitle corrected for context | Copywriting | Authenticity |
 
 ---
 
-*Document prepared for: Highshine IT Solutions — About Us page redesign review*
-*Design versions compared: Old (section screenshots) vs New (full-page PDF, June 2026)*

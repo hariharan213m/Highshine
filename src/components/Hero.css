@@ -259,50 +259,6 @@
   background: rgba(255,255,255,0.12);
 }
 
-.hero__scroll-indicator {
-  position: absolute;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  opacity: 0;
-  animation: fadeSlideUp 0.8s ease 1s forwards;
-}
-
-.hero__scroll-mouse {
-  width: 22px;
-  height: 36px;
-  border: 2px solid rgba(255,255,255,0.3);
-  border-radius: 11px;
-  display: flex;
-  justify-content: center;
-  padding-top: 6px;
-}
-
-.hero__scroll-wheel {
-  width: 3px;
-  height: 6px;
-  background: rgba(255,255,255,0.6);
-  border-radius: 2px;
-  animation: scrollWheel 2s ease-in-out infinite;
-}
-
-@keyframes scrollWheel {
-  0% { transform: translateY(0); opacity: 1; }
-  80% { transform: translateY(10px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 0; }
-}
-
-.hero__scroll-indicator span {
-  font-size: 11px;
-  color: rgba(255,255,255,0.35);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
 @keyframes fadeSlideUp {
   from {
     opacity: 0;
